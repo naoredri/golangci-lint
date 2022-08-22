@@ -44,7 +44,7 @@ linters-settings:
       - '2'
       - '3'
       - '4'
-      - '5'
+      - '5'            
     ignored-functions:
       - strings.SplitN
 
@@ -130,7 +130,10 @@ issues:
     - path: _test\.go
       linters:
         - gomnd
-
+    - path: _gen\.go	
+      linters:
+        - lll
+            
     - path: pkg/golinters/errcheck.go
       text: "SA1019: errCfg.Exclude is deprecated: use ExcludeFunctions instead"
     - path: pkg/commands/run.go
@@ -140,7 +143,7 @@ issues:
 
 run:
   timeout: 5m
-  go: '1.17' # TODO(ldez): we force to use an old version of Go for the CI and the tests.
+  go: '1.17'
   skip-dirs:
     - test/testdata_etc
     - internal/cache

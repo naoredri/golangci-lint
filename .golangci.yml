@@ -133,7 +133,9 @@ issues:
     - path: _gen\.go	
       linters:
         - lll
-            
+    - path: 0[0-9][0-9]_.*\.go # migration files
+      linters:
+        - gochecknoinits               
     - path: pkg/golinters/errcheck.go
       text: "SA1019: errCfg.Exclude is deprecated: use ExcludeFunctions instead"
     - path: pkg/commands/run.go

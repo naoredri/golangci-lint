@@ -72,7 +72,6 @@ linters:
   enable:
     - bidichk
     - bodyclose
-    - deadcode
     - decorder
     - depguard
     - dogsled
@@ -98,13 +97,11 @@ linters:
     - noctx
     - nolintlint
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - wastedassign
     - whitespace
 
@@ -135,7 +132,10 @@ issues:
         - lll
     - path: 0[0-9][0-9]_.*\.go # migration files
       linters:
-        - gochecknoinits               
+        - gochecknoinits 
+    - path: internal\.go # internal files
+      linters:
+        - gomnd              
     - path: pkg/golinters/errcheck.go
       text: "SA1019: errCfg.Exclude is deprecated: use ExcludeFunctions instead"
     - path: pkg/commands/run.go

@@ -75,7 +75,6 @@ linters:
     - decorder
     - depguard
     - dogsled
-    - dupl
     - errcheck
     - exportloopref
     - funlen

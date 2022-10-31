@@ -127,6 +127,9 @@ issues:
     - path: _gen\.go	
       linters:
         - lll
+    - path: app|asset|dns|finding|flow\.resolvers\.go
+      linters:
+        - lll			
     - path: 0[0-9][0-9]_.*\.go # migration files
       linters:
         - gochecknoinits 

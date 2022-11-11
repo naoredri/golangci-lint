@@ -30,7 +30,7 @@ linters-settings:
   goimports:
     local-prefixes: github.com/golangci/golangci-lint
   gomnd:
-    # don't include the "operation" and "assign"
+    # don't include the "operation" and "assign" 
     checks:
       - argument
       - case

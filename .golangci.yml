@@ -8,7 +8,7 @@ linters-settings:
       - github.com/sirupsen/logrus: "logging is allowed only by logutils.Log"
   funlen:
     lines: 100
-    statements: 60
+    statements: 55
   goconst:
     min-len: 2
     min-occurrences: 3
@@ -26,7 +26,7 @@ linters-settings:
       - whyNoLint
       - wrapperFunc
   gocyclo:
-    min-complexity: 25
+    min-complexity: 20
   goimports:
     local-prefixes: github.com/golangci/golangci-lint
   gomnd:

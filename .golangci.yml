@@ -153,3 +153,5 @@ run:
     - internal/cache
     - internal/renameio
     - internal/robustio
+    - vendor
+  skip-dirs-use-default: false    

@@ -42,7 +42,9 @@ linters-settings:
       - '3'
       - '4'
       - '5'       
-      - '10'       
+      - '10'
+      - '80'
+      - '443'
     ignored-functions:
       - strings.SplitN
 

@@ -22,6 +22,8 @@ linters-settings:
         deny:
           - pkg: "github.com/sirupsen/logrus"
             desc: Should be replaced by Jed internal log package "gitlab.com/jedsec/internals/log"
+          - pkg: "github.com/saferwall/pe/log"
+            desc: Should be replaced by Jed internal log package "gitlab.com/jedsec/internals/log"            
           - pkg: "github.com/pkg/errors"
             desc: Should be replaced by standard lib errors package
           - pkg: "github.com/aws/smithy-go/ptr"

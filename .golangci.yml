@@ -106,7 +106,7 @@ linters:
     - gocyclo
     - gofmt
     - goimports
-    - gomnd
+    - mnd
     - goprintffuncname
     - gosec
     - gosimple
@@ -154,7 +154,7 @@ issues:
   exclude-rules:
     - path: _test\.go
       linters:
-        - gomnd
+        - mnd
     - path: _gen\.go	
       linters:
         - lll
@@ -166,7 +166,7 @@ issues:
         - gochecknoinits 
     - path: internal\.go # internal files
       linters:
-        - gomnd   
+        - mnd   
     - path: resolvers\.go # graph resolvers files
       text: "hugeParam:"                
     - path: pkg/golinters/errcheck.go

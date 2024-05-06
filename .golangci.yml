@@ -143,13 +143,13 @@ linters:
   # - wsl
 
 issues:  
-  skip-dirs:
+  exclude-dirs:
     - test/testdata_etc
     - internal/cache
     - internal/renameio
     - internal/robustio
     - vendor
-  skip-dirs-use-default: false  
+  # skip-dirs-use-default: false  
   # Excluding configuration per-path, per-linter, per-text and per-source
   exclude-rules:
     - path: _test\.go

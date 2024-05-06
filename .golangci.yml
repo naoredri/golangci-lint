@@ -149,7 +149,7 @@ issues:
     - internal/renameio
     - internal/robustio
     - vendor
-  # skip-dirs-use-default: false  
+  
   # Excluding configuration per-path, per-linter, per-text and per-source
   exclude-rules:
     - path: _test\.go
@@ -163,7 +163,7 @@ issues:
         - lll			
     - path: 0[0-9][0-9]_.*\.go # migration files
       linters:
-        - gochecknoinits 
+        - init 
     - path: internal\.go # internal files
       linters:
         - mnd   

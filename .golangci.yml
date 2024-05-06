@@ -51,7 +51,7 @@ linters-settings:
     min-complexity: 21
   goimports:
     local-prefixes: github.com/golangci/golangci-lint
-  gomnd:
+  mnd:
     # don't include the "operation" and "assign" 
     checks:
       - argument
@@ -142,7 +142,14 @@ linters:
   # - revive
   # - wsl
 
-issues:
+issues:  
+  skip-dirs:
+    - test/testdata_etc
+    - internal/cache
+    - internal/renameio
+    - internal/robustio
+    - vendor
+  skip-dirs-use-default: false  
   # Excluding configuration per-path, per-linter, per-text and per-source
   exclude-rules:
     - path: _test\.go
@@ -171,11 +178,4 @@ issues:
 
 run:
   timeout: 5m
-  go: '1.17'
-  skip-dirs:
-    - test/testdata_etc
-    - internal/cache
-    - internal/renameio
-    - internal/robustio
-    - vendor
-  skip-dirs-use-default: false    
+  go: '1.17'  

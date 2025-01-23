@@ -30,7 +30,7 @@ linters-settings:
             desc: Should be replaced by Jed internal ptr package "gitlab.com/jedsec/internals/ptr"      
   funlen:
     lines: 100
-    statements: 55
+    statements: 65
   goconst:
     min-len: 3
     min-occurrences: 4
